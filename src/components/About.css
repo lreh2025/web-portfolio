@@ -1,0 +1,279 @@
+.about {
+  background: white;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #2d3748;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: #3a86ff;
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  color: #4a5568;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 20px auto 0;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.about-text h3 {
+  font-size: 1.8rem;
+  color: #2d3748;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: #4a5568;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.education-highlight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(135deg, rgba(0, 57, 166, 0.1), rgba(228, 27, 35, 0.1));
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  border-left: 4px solid #0039A6;
+}
+
+.edu-icon {
+  font-size: 2rem;
+  color: #0039A6;
+  flex-shrink: 0;
+}
+
+.edu-info h4 {
+  color: #2d3748;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.edu-info p {
+  color: #4a5568;
+  margin: 0 0 8px 0;
+  font-size: 0.95rem;
+}
+
+.edu-status {
+  font-size: 0.85rem;
+  color: #0039A6;
+  font-weight: 500;
+  background: rgba(0, 57, 166, 0.1);
+  padding: 4px 10px;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+  flex: 1;
+  min-width: 120px;
+  background: #f8f9fa;
+  padding: 25px 15px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.stat:hover {
+  border-color: #3a86ff;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(58, 134, 255, 0.1);
+}
+
+.stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3a86ff;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  display: block;
+  font-size: 1rem;
+  color: #2d3748;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.stat-sub {
+  display: block;
+  font-size: 0.85rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+.academic-focus {
+  margin-top: 40px;
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.academic-focus h4 {
+  color: #2d3748;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.focus-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.focus-tag {
+  background: white;
+  color: #3a86ff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.focus-tag:hover {
+  background: #3a86ff;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  border-color: #3a86ff;
+  box-shadow: 0 15px 35px rgba(58, 134, 255, 0.1);
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #3a86ff, #8338ec);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.feature-card h4 {
+  font-size: 1.3rem;
+  color: #2d3748;
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  color: #4a5568;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .stats {
+    justify-content: center;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-highlight {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .focus-tags {
+    justify-content: center;
+  }
+
+  .stat {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat {
+    padding: 20px 10px;
+  }
+
+  .feature-card {
+    padding: 20px;
+  }
+
+  .academic-focus {
+    padding: 20px;
+  }
+}

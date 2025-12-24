@@ -1,0 +1,318 @@
+/* Add these styles to your existing Home.css */
+
+.graduation-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #0039A6, #E41B23); /* GSU colors */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 15px rgba(0, 57, 166, 0.2);
+}
+
+.graduation-icon {
+  font-size: 1.2rem;
+}
+
+.education-highlight {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 25px 0;
+  border: 2px solid #e2e8f0;
+}
+
+.edu-current, .edu-completed {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.edu-status {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.edu-current .edu-status {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.edu-completed .edu-status {
+  background: #e8f5e8;
+  color: #2e7d32;
+}
+
+.edu-progress {
+  font-size: 0.8rem;
+  color: #666;
+  font-style: italic;
+}
+
+.edu-degree {
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 1.1rem;
+}
+
+.edu-school {
+  color: #0039A6;
+  font-weight: 500;
+}
+
+.edu-year {
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.edu-divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 20px 0;
+  position: relative;
+}
+
+.edu-divider::before {
+  content: '→';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 0 10px;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.home-title {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #2d3748;
+}
+
+.home-description {
+  font-size: 1.15rem;
+  color: #4a5568;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+/* Profile image enhancements */
+.profile-image {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #0039A6, #E41B23, #3a86ff);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  position: relative;
+  z-index: 2;
+  animation: morphing 15s infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.student-overlay {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.student-degree {
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-bottom: 5px;
+}
+
+.student-status {
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 12px;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.tech-stack {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 3;
+}
+
+.tech-tag {
+  background: white;
+  color: #0039A6;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.social-tooltip {
+  position: relative;
+}
+
+.social-tooltip:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2d3748;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  margin-bottom: 8px;
+}
+
+.social-tooltip:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #2d3748;
+  margin-bottom: 3px;
+}
+
+/* Update floating shapes colors */
+.shape-1 {
+  background: linear-gradient(45deg, #0039A6, #3a86ff);
+  opacity: 0.15;
+}
+
+.shape-2 {
+  background: linear-gradient(45deg, #E41B23, #ff006e);
+  opacity: 0.15;
+}
+
+/* Progress indicator */
+.progress-indicator {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress-label {
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0039A6, #E41B23);
+  border-radius: 3px;
+  width: 70%; /* Adjust based on your progress */
+  animation: progressAnimation 2s ease-in-out;
+}
+
+@keyframes progressAnimation {
+  from { width: 0%; }
+  to { width: 70%; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .home-title {
+    font-size: 2.5rem;
+  }
+  
+  .graduation-badge {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+  
+  .student-text {
+    font-size: 1.5rem;
+  }
+  
+  .tech-stack {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  
+  .education-highlight {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2.2rem;
+  }
+  
+  .student-overlay {
+    padding: 15px;
+  }
+  
+  .tech-tag {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+  
+  .edu-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .edu-divider::before {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
