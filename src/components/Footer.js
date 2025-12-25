@@ -96,12 +96,13 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>
             &copy; {new Date().getFullYear()} Portfolio. All rights reserved.
-            Made with <FaHeart className="heart-icon" /> by Alex
+            Made with <FaHeart className="heart-icon" /> by Law Reh
           </p>
         </div>
       </div>
     </footer>
   );
 };
+
 
 export default Footer;
