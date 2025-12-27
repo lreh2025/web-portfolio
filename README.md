@@ -8,7 +8,7 @@ Personal web portfolio showcasing my projects, skills, and experience as a Compu
 
 ## 👋 About Me
 
-Hi, I’m **Law Reh**, a Computer Science student graduating in **Spring 2025**.  
+Hi, I’m **Law Reh**, a Computer Science student will be graduating in **Fall 2026**.  
 I’m interested in software development, system-level programming, and building clean, user-friendly web applications.
 
 This portfolio highlights my work, technical skills, and projects.
